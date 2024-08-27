@@ -1,3 +1,6 @@
+package EmployeeInformation;
+
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -6,7 +9,7 @@ public class Employee {
     private String name;
     private String surname;
     private int age;
-    private double salary;
+    private BigDecimal salary;
     private Department department;
     private boolean isEmployer;
     private LocalDate startDate;
@@ -23,7 +26,7 @@ public class Employee {
                 "," + address  ;
     }
 
-    public Employee(int id, String name, String surname, int age, double salary, Department department, boolean isEmployer, LocalDate startDate, String email, String phoneNumber, Position position, String address) {
+    public Employee(int id, String name, String surname, int age, BigDecimal salary, Department department, boolean isEmployer, LocalDate startDate, String email, String phoneNumber, Position position, String address) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -70,11 +73,11 @@ public class Employee {
         this.age = age;
     }
 
-    public double getSalary() {
+    public BigDecimal getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(BigDecimal salary) {
         this.salary = salary;
     }
 
