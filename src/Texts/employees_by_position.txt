@@ -1,5 +1,5 @@
-MANAGER count:17
-EXECUTIVE count:3
 SENIOR count:15
 JUNIOR count:13
 INTERN count:2
+EXECUTIVE count:3
+MANAGER count:17

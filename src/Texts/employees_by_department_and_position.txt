@@ -4,28 +4,25 @@ EXECUTIVE:
       29,Steven,Hernandez,49,88000.0,EXECUTIVE,true,2001-04-28,steven.hernandez@example.com,1234567890,EXECUTIVE,1717 Willow St
       35,Ronald,Green,50,92000.0,EXECUTIVE,true,1999-12-01,ronald.green@example.com,7890123456,EXECUTIVE,2323 Cedar St
 SALES:
+  SENIOR:
+      16,Susan,Martin,48,81000.0,SALES,true,2005-09-30,susan.martin@example.com,6789012346,SENIOR,444 Birch St
+      43,Eric,Turner,48,82000.0,SALES,true,2005-08-02,eric.turner@example.com,6789012345,SENIOR,3131 Cedar St
   MANAGER:
       11,David,Anderson,38,64000.0,SALES,true,2012-01-02,david.anderson@example.com,1234567801,MANAGER,808 Willow St
       20,Matthew,Robinson,34,56000.0,SALES,true,2011-07-07,matthew.robinson@example.com,1234567890,MANAGER,888 Maple St
       25,Edward,Walker,35,59000.0,SALES,true,2012-06-01,edward.walker@example.com,6789012345,MANAGER,1313 Birch St
       36,Sharon,Adams,34,58000.0,SALES,true,2011-04-21,sharon.adams@example.com,8901234567,MANAGER,2424 Redwood St
       48,Stephanie,Collins,34,60000.0,SALES,true,2011-12-19,stephanie.collins@example.com,2345678901,MANAGER,3636 Maple St
-  SENIOR:
-      16,Susan,Martin,48,81000.0,SALES,true,2005-09-30,susan.martin@example.com,6789012346,SENIOR,444 Birch St
-      43,Eric,Turner,48,82000.0,SALES,true,2005-08-02,eric.turner@example.com,6789012345,SENIOR,3131 Cedar St
 MARKETING:
-  MANAGER:
-      8,Patricia,Wilson,33,58000.0,MARKETING,true,2011-03-05,patricia.wilson@example.com,7890123456,MANAGER,505 Spruce St
-      30,Dorothy,King,38,62000.0,MARKETING,true,2011-10-25,dorothy.king@example.com,2345678901,MANAGER,1818 Cypress St
-      46,Debra,Evans,32,56000.0,MARKETING,true,2013-05-25,debra.evans@example.com,9012345678,MANAGER,3434 Cypress St
   SENIOR:
       15,Joseph,Harris,33,60000.0,MARKETING,true,2010-05-17,joseph.harris@example.com,5678901235,SENIOR,333 Cedar St
       23,Brian,Lewis,32,53000.0,MARKETING,true,2014-09-16,brian.lewis@example.com,4567890123,SENIOR,1111 Pine St
       39,Larry,Carter,31,53000.0,MARKETING,true,2013-09-17,larry.carter@example.com,2345678901,SENIOR,2727 Elm St
-FINANCE:
   MANAGER:
-      17,Charles,Thompson,37,65000.0,FINANCE,true,2012-08-12,charles.thompson@example.com,7890123457,MANAGER,555 Redwood St
-      41,Frank,Perez,37,65000.0,FINANCE,true,2011-11-06,frank.perez@example.com,4567890123,MANAGER,2929 Oak St
+      8,Patricia,Wilson,33,58000.0,MARKETING,true,2011-03-05,patricia.wilson@example.com,7890123456,MANAGER,505 Spruce St
+      30,Dorothy,King,38,62000.0,MARKETING,true,2011-10-25,dorothy.king@example.com,2345678901,MANAGER,1818 Cypress St
+      46,Debra,Evans,32,56000.0,MARKETING,true,2013-05-25,debra.evans@example.com,9012345678,MANAGER,3434 Cypress St
+FINANCE:
   SENIOR:
       3,Michael,Johnson,42,75000.0,FINANCE,true,2023-11-22,michael.johnson@example.com,2345678901,SENIOR,789 Pine St
       9,James,Moore,45,85000.0,FINANCE,true,2007-04-14,james.moore@example.com,8901234567,SENIOR,606 Redwood St
@@ -36,6 +33,9 @@ FINANCE:
       38,Betty,Nelson,46,76000.0,FINANCE,true,2006-10-19,betty.nelson@example.com,1234567890,SENIOR,2626 Cypress St
       45,Raymond,Parker,45,84000.0,FINANCE,true,2007-06-10,raymond.parker@example.com,8901234567,SENIOR,3333 Willow St
       49,George,Stewart,47,77000.0,FINANCE,true,2006-09-14,george.stewart@example.com,3456789012,SENIOR,3737 Birch St
+  MANAGER:
+      17,Charles,Thompson,37,65000.0,FINANCE,true,2012-08-12,charles.thompson@example.com,7890123457,MANAGER,555 Redwood St
+      41,Frank,Perez,37,65000.0,FINANCE,true,2011-11-06,frank.perez@example.com,4567890123,MANAGER,2929 Oak St
 IT:
   JUNIOR:
       6,Linda,Jones,27,48000.0,IT,false,2016-06-30,linda.jones@example.com,5678901234,JUNIOR,303 Cedar St
@@ -55,6 +55,8 @@ IT:
       1,John,Doe,28,50000.0,IT,false,2015-05-01,john.doe@example.com,1234567890,INTERN,123 Main St
       4,Emily,Davis,30,54000.0,IT,false,2013-07-19,emily.davis@example.com,3456789012,INTERN,101 Maple St
 HR:
+  SENIOR:
+      19,Daniel,Martinez,43,70000.0,HR,true,2009-01-22,daniel.martinez@example.com,9012345679,SENIOR,777 Cypress St
   MANAGER:
       2,Jane,Smith,35,60000.0,HR,true,2023-03-15,jane.smith@example.com,0987654321,MANAGER,456 Elm St
       7,Robert,Miller,39,62000.0,HR,true,2012-09-10,robert.miller@example.com,6789012345,MANAGER,404 Birch St
@@ -63,5 +65,3 @@ HR:
       33,Scott,Hill,36,67000.0,HR,true,2011-02-13,scott.hill@example.com,5678901234,MANAGER,2121 Oak St
       40,Lisa,Mitchell,39,61000.0,HR,true,2012-05-04,lisa.mitchell@example.com,3456789012,MANAGER,2828 Maple St
       47,Gerald,Edwards,40,70000.0,HR,true,2010-02-11,gerald.edwards@example.com,1234567890,MANAGER,3535 Elm St
-  SENIOR:
-      19,Daniel,Martinez,43,70000.0,HR,true,2009-01-22,daniel.martinez@example.com,9012345679,SENIOR,777 Cypress St

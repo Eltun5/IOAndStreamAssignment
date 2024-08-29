@@ -22,7 +22,7 @@ public class Main {
 
         Map<Department, List<Employee>> department_summary = readFileToList().stream()//Generate a department summary report in department_summary.txt.
                 .collect(Collectors.groupingBy(Employee::getDepartment));
-        writeFileFromMap(department_summary, "src/Texts/department_summary.txt");
+        writeFileFromMapForDepartment(department_summary, "src/Texts/department_summary.txt");
 
 
         List<Employee> new_employees = readFileToList().stream()//List employees who started in the last 2 years in new_employees.txt.
@@ -162,15 +162,36 @@ public class Main {
         }
     }
 
-    private static void writeFileFromMap(Map<Department, List<Employee>> department_summary, String name) {
+    private static void writeFileFromMapForDepartment(Map<Department, List<Employee>> department_summary, String name) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(name))) {
-            Set<Department> keySet = department_summary.keySet();
-            for (Department department : keySet) {
+            Set<Department> keySetDepartment = department_summary.keySet();
+            for (Department department : keySetDepartment) {
                 writer.write(department + ":");
                 writer.newLine();
-                for (Employee employee : department_summary.get(department)) {
-                    writer.write(employee.toString());
+                writer.write("employees count:"+department_summary.get(department).size());
+                writer.newLine();
+                double sum=0;
+                for (Employee employee:department_summary.get(department)){
+                    sum+=Double.parseDouble(employee.getSalary().toString());
+                }
+                writer.write("employees total money:"+sum);
+                writer.newLine();
+
+                Map<Position, List<Employee>> positionListMap = department_summary.get(department).stream()
+                        .collect(Collectors.groupingBy(Employee::getPosition));
+                Set<Position> keySetPosition = positionListMap.keySet();
+                for (Position position : keySetPosition) {
+                    writer.write("  " + position + ":");
                     writer.newLine();
+                    writer.write("      employees count:"+positionListMap.get(position).size());
+                    writer.newLine();
+                    double sum1=0;
+                    for (Employee employee:positionListMap.get(position)){
+                        sum1+=Double.parseDouble(employee.getSalary().toString());
+                    }
+                    writer.write("      employees total money:"+sum1);
+                    writer.newLine();
+
                 }
             }
         } catch (IOException e) {
